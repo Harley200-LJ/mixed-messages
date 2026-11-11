@@ -1,6 +1,6 @@
 const readingPrompts = {
     genre: ['mystery', 'romance', 'science fiction', 'fantasy', 'historical fiction', 'non-fiction', 'thriller', 'horror', 'biography', 'self-help'],
-    challenge: ['was published before you were born', 'has a one-word title', 'is set in a country you have never visited', 'was written by a debut author', 'has been on your shelf for over a year', 'was recommended by a friend', 'is a book you have been meaning to read for a long time', 'has won an award'],
+    challenge: ['was published before you were born', 'has a one-word title', 'is set in a country you have never visited', 'was written by a debut author', 'has been on your shelf for over a year', 'was recommended by a friend', 'you have been meaning to read for a long time', 'has won an award'],
     location: ['in a park', 'at the beach', 'in a cozy café', 'on a train', 'in a library', 'in a hammock', 'on a balcony', 'in a treehouse', 'by a fireplace', 'in a garden'],
     timeChallenge: ['15 minutes', '30 minutes', 'one full chapter', '50 pages', 'until you finish your drink'],
     snackOrDrink: ['cup of tea', 'hot chocolate', 'biscuit (or three)', 'glass of lemonade', 'slice of cake'],
