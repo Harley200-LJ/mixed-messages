@@ -6,9 +6,17 @@ const readingPrompts = {
     snackOrDrink: ['cup of tea', 'hot chocolate', 'biscuit(or three)', 'glass of lemonade', 'slice of cake'],
     reflection: ['write down your favourite quote', 'predict how the book ends', 'describe the main character in 3 words', 'recommend it to someone', 'rate it out of 10']
 };
-console.log(readingPrompts.genre);
-console.log(readingPrompts.challenge);
-console.log(readingPrompts.location);
-console.log(readingPrompts.timeChallenge);
-console.log(readingPrompts.snackOrDrink);
-console.log(readingPrompts.reflection);
+
+const getRandomItem = arr => arr[Math.floor(Math.random() * arr.length)];
+
+const generatePrompt = () => {
+    const lines = [
+        'Your reading prompt is:',
+        `Read a ${getRandomItem(readingPrompts.genre)} book that ${getRandomItem(readingPrompts.challenge)}.`,
+        `Read it ${getRandomItem(readingPrompts.location)} for ${getRandomItem(readingPrompts.timeChallenge)} while enjoying a ${getRandomItem(readingPrompts.snackOrDrink)}.`,
+        `Afterwards, take a moment to ${getRandomItem(readingPrompts.reflection)}.`
+    ];
+    return lines.join(`\n`);
+};
+
+console.log(generatePrompt());
